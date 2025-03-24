@@ -26,8 +26,19 @@ const Pessoa = require('./pessoa');
         })
         console.log(resultadoCreatePessoa); 
 
+        /*
         const Produtos = await Produto.finAll();
         console.log(Produtos);
+       
+       const produto = await Produto.findByPk(1);
+       //console.log(produto);
+       produto.nome = 'PC Lento';
+
+       /onst resultadoSave = await produto.save();
+       console.log(resultadoSave);
+
+       Produto.destroy({ where: { id: 1 }})
+       */
 
     } catch (error) {
         console.log(error);
